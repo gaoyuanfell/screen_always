@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      区块链1
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,11 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-button (click)="callNumberFun()">打电话1</ion-button>
+  <ion-button (click)="openAlter()">open</ion-button>
+
+  <ion-toggle
+    (ionChange)="keepscreenonChange(keepscreenonValue)"
+    [(ngModel)]="keepscreenonValue"
+  ></ion-toggle>
 </ion-content>
